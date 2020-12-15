@@ -28,8 +28,10 @@ void solve() {
         lastog = m[ans];
         m[ans] = turn;
         turn++;
-        cout<<turn<<" - "<<ans<<endl;
-        if(turn==30000001) break;
+        if(turn==30000001) {
+            cout<<ans;
+            break;
+        }
     }
 }
 
